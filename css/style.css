@@ -1,0 +1,39 @@
+@import "base/var.css";
+@import "base/reset.css";
+@import "block/background.css";
+@import "block/timer.css";
+@import "block/timer-finish.css";
+
+html {
+    height: 100%;
+}
+
+body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: var(--white-color);
+    font-size: var(--text);
+    font-family: "Bodoni MT", sans-serif;
+    background: var(--pirple-color);
+}
+
+main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    flex-basis: 500px;
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 30px #290053;
+}
+
+.title {
+    color: white;
+}

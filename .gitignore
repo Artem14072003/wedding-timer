@@ -1,0 +1,18 @@
+# Node modules
+node_modules/
+**/node_modules/
+npm-debug.log*
+
+#IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# macOS
+.DS_Store
+**./DS_Store
+
+# Доп
+*.log
+.env
