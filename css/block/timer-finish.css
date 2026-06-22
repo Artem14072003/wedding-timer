@@ -1,7 +1,6 @@
 .timer-finish {
-    /*display: none;*/
     overflow: hidden;
     opacity: 0;
-    flex-basis: 0;
+    height: 0;
     visibility: hidden;
 }

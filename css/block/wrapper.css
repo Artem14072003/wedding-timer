@@ -1,0 +1,36 @@
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper {
+    flex-basis: 450px;
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 30px #290053;
+}
+
+@media (max-width: 850px) {
+    .main {
+        margin: 0 30px;
+    }
+
+    .wrapper {
+        flex-basis: 450px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px) {
+    .main {
+        margin: 0 15px;
+    }
+
+    .wrapper {
+        flex-basis: 400px;
+        width: 300px;
+    }
+}
