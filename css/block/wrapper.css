@@ -11,6 +11,11 @@
     width: 800px;
     background-color: rgba(0, 0, 0, 0.7);
     box-shadow: 0 0 30px #290053;
+    position: relative;
+}
+
+.wrapper::-webkit-scrollbar {
+    width: 0;
 }
 
 @media (max-width: 850px) {
@@ -19,7 +24,7 @@
     }
 
     .wrapper {
-        flex-basis: 450px;
+        flex-basis: 425px;
         width: 100%;
     }
 }

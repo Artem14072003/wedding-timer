@@ -1,6 +1,63 @@
-.timer-finish {
+.timer_container-finish {
+    padding-top: 40px;
     overflow: hidden;
     opacity: 0;
     height: 0;
+    transform: translateY(150px);
     visibility: hidden;
+    transition: all 1s ease-in;
+}
+
+h2.timer_container-finish_title {
+    padding-bottom: 15px;
+}
+
+.timer_container-finish.active {
+    overflow: visible;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    transition: all 1s ease-in;
+}
+
+.timer_container-finish_text {
+    font-size: clamp(var(--min-text), 2.5vw, var(--max-text));
+    padding: 0 15px;
+    word-break: break-word;
+}
+
+.timer_container-finish_text {
+    padding-bottom: 10px;
+}
+
+.timer_container-finish_text:not(.timer_container-finish_text:last-child):first-letter {
+    padding-left: 20px;
+}
+
+.timer_container-finish_text:last-child {
+    padding-top: 20px;
+    width: 350px;
+    text-align: right;
+    float: right;
+}
+
+@media (max-width: 768px) {
+    .timer_container-finish {
+        padding-top: 30px;
+        transform: translateY(150px);
+    }
+
+    .timer_container-finish_text:last-child {
+        width: 300px;
+    }
+}
+
+@media (max-width: 425px) {
+    .timer_container-finish {
+        transform: translateY(100px);
+    }
+
+    .timer_container-finish_text:last-child {
+        width: 250px;
+    }
 }

@@ -1,55 +1,79 @@
 <!doctype html>
 <html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
+<head>
+    <meta charset="UTF-8"/>
     <meta
-      name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+            name="viewport"
+            content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="./css/style.css" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css"/>
     <title>Свадебный таймер!</title>
-  </head>
-  <body>
-    <main class="main">
-      <div class="timer_container wrapper">
+</head>
+<body>
+<main class="main">
+    <div class="timer_container wrapper">
         <div class="timer_container-imgs">
-          <div class="timer_container-img img-zhenya"></div>
-          <div class="timer_container-img img-danya"></div>
-          <div class="timer_container-img_forever">
-              <img src="./img/love_forever.jpg" alt="Zheny&Dany" />
-          </div>
+            <div class="timer_container-img img-zhenya"></div>
+            <div class="timer_container-img img-danya"></div>
+            <div class="timer_container-img_forever">
+                <img src="./img/love_forever.jpg" alt="Zheny&Dany"/>
+            </div>
         </div>
 
         <div class="timer_container-content">
-          <h2 class="timer_container-title title">До росписи осталось:</h2>
+            <h2 class="timer_container-title title">До церемонии осталось:</h2>
 
-          <div class="timer_container-times">
-            <h3 class="timer_container-time">
-              <span class="timer_container-time_clock">00</span>
-              <span class="timer_container-time_text">Дней</span>
-            </h3>
-            <h3 class="timer_container-time">
-              <span class="timer_container-time_clock">00</span>
-              <span class="timer_container-time_text">Часов</span>
-            </h3>
-            <h3 class="timer_container-time">
-              <span class="timer_container-time_clock">00</span>
-              <span class="timer_container-time_text">Минут</span>
-            </h3>
-            <h3 class="timer_container-time">
-              <span class="timer_container-time_clock">00</span>
-              <span class="timer_container-time_text">Секунд</span>
-            </h3>
-          </div>
+            <div class="timer_container-times">
+                <h3 class="timer_container-time">
+                    <span id="days_clock" class="timer_container-time_clock">00</span>
+                    <span id="days_text" class="timer_container-time_text">Дней</span>
+                </h3>
+                <h3 class="timer_container-time">
+                    <span id="hours_clock" class="timer_container-time_clock">00</span>
+                    <span id="hours_text" class="timer_container-time_text">Часов</span>
+                </h3>
+                <h3 class="timer_container-time">
+                    <span id="minutes_clock" class="timer_container-time_clock">00</span>
+                    <span id="minutes_text" class="timer_container-time_text">Минут</span>
+                </h3>
+                <h3 class="timer_container-time">
+                    <span id="seconds_clock" class="timer_container-time_clock">00</span>
+                    <span id="seconds_text" class="timer_container-time_text">Секунд</span>
+                </h3>
+            </div>
 
-          <div class="timer-finish">Поздравляю вас!</div>
         </div>
-      </div>
-    </main>
+        <div class="timer_container-finish">
+            <h2 class="timer_container-finish_title title"> Дорогие Женя и Даня!</h2>
+            <p class="timer_container-finish_text">
+                Сегодня вы стали не просто мужем и женой, а настоящей семьёй — единым целым, которое будет идти по жизни
+                рука об руку. Пусть ваша любовь остаётся такой же яркой и трепетной, как сегодня, пусть она растёт с
+                каждым годом, преодолевает любые трудности и согревает вас даже в самые холодные дни.
+            </p>
+            <p class="timer_container-finish_text">
+                От всего сердца поздравляем вас с самым светлым и важным днём в вашей жизни — днём вашего
+                бракосочетания! ✨
+            </p>
+            <p class="timer_container-finish_text">
+                Пусть ваш совместный путь будет долгим, интересным и наполненным только самыми прекрасными событиями.
+                Берегите друг друга, цените каждую минуту вместе и никогда не забывайте, почему однажды выбрали именно
+                этого человека.
+            </p>
+            <p class="timer_container-finish_text">
+                Счастья вам, любви и семейного благополучия!❤️
+            </p>
+            <p class="timer_container-finish_text">
+                С наилучшими пожеланиями,
+                Тёма и Алёна!
+            </p>
+        </div>
+    </div>
+</main>
 
-    <canvas id="canvas"></canvas>
+<canvas id="canvas"></canvas>
 
-    <script type="module" src="./js/app.js"></script>
-  </body>
+<script type="module" src="./js/app.js"></script>
+</body>
 </html>

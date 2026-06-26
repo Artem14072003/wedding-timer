@@ -1,30 +1,53 @@
 @import "base/var.css";
 @import "base/reset.css";
+@import "base/animation.css";
 
 @import "block/wrapper.css";
-@import "block/background.css";
 @import "block/timer-content.css";
 @import "block/timer-finish.css";
 
 @import "container/timer-img.css";
 
 html {
-  height: 100%;
+    height: 100%;
 }
 
 body {
-  min-height: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  color: var(--white-color);
-  font-size: var(--text);
-  font-family: "Bodoni MT", sans-serif;
-  background: var(--pirple-color);
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: var(--white-color);
+    font-size: var(--min-text);
+    font-family: "Bodoni MT", sans-serif;
+    background: var(--pirple-color);
+}
+
+canvas {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 .title {
-  color: white;
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 120%;
+    text-align: center;
+    padding-bottom: 20px;
 }
 
+@media (max-width: 768px) {
+    .title {
+        padding: 5px 10px;
+        font-size: clamp(var(--min-title), 4vw, var(--max-title));
+    }
+}
 
+body::selection {
+    background-color: #6701c8;
+}

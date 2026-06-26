@@ -2,6 +2,8 @@
     --white-color: #fff;
     --pirple-color: #1a0033;
     --pirple-shadow: #290053;
-    --text: 14px;
-    --title: 20px;
+    --min-text: 16px;
+    --max-text: 20px;
+    --min-title: 20px;
+    --max-title: 30px;
 }

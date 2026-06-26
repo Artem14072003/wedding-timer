@@ -1,0 +1,10 @@
+@keyframes elementHiding {
+    from,
+    50% {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
