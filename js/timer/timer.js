@@ -20,7 +20,7 @@ const futureTime = new Date("2026-07-09T00:00:00");
 
 const updateTime = (time) => time <= 9 ? '0' + time : time;
 
-const updateText = (time, text) =>
+const updateText = (time, text) => {
     if (typeof time !== 'number' || isNaN(time)) {
         return text;
     }
