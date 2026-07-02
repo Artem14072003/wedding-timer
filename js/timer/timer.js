@@ -16,11 +16,11 @@ const secondsClock = document.getElementById('seconds_clock');
 const secondsText = document.getElementById('seconds_text');
 
 // Получаем нужное время
-const futureTime = new Date("07 09 2026 00:00");
-console.log(futureTime)
-const updateTime = (time) => time <= 9 && !isNaN(`0${time}`) ? `0${time}` : time;
+const futureTime = new Date("2026-07-09T00:00:00");
 
-const updateText = (time, text) => {
+const updateTime = (time) => time <= 9 ? '0' + time : time;
+
+const updateText = (time, text) =>
     if (typeof time !== 'number' || isNaN(time)) {
         return text;
     }
