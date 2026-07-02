@@ -17,7 +17,7 @@ const secondsText = document.getElementById('seconds_text');
 
 // Получаем нужное время
 const futureTime = new Date("07 09 2026 00:00");
-
+console.log(futureTime)
 const updateTime = (time) => time <= 9 && !isNaN(`0${time}`) ? `0${time}` : time;
 
 const updateText = (time, text) => {
